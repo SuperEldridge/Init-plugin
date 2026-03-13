@@ -27,6 +27,23 @@ F:\workspace\
 以上为工作区搭建，还可在全局设置agent、CLAUDE.md和GLOBAL_LESSONS.md等等，全局的就个人情况个人分析
 如果遇到有跑不通的，盘可能和我不一样，我是F盘，可以改成自己的盘和路径
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 settings.json内容：
 {
   "hooks": {
