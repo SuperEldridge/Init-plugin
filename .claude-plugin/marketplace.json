@@ -1,0 +1,10 @@
+{
+  "name": "Init-plugin",
+  "description": "SuperEldridge 的快捷初始化工作流插件",
+  "plugins": [
+    {
+      "name": "Init-plugin", 
+      "source": "."
+    }
+  ]
+}
