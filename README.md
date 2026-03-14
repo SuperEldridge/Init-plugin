@@ -1,4 +1,5 @@
 # Claude Code 快捷初始化工作流插件
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 这是一个专为 Claude Code 打造的快捷初始化工作流插件。以下是建议的工作区框架与相关配置文件。
 
