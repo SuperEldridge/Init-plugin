@@ -1,50 +1,49 @@
-这是一个专为 Claude Code 打造的快捷初始化工作流插件，包含了高效的目录结构规范、自动化的 Hooks 以及实用的 Skills。
-## 下载与安装
+# Claude Code 快捷初始化工作流插件
 
-在你的 Claude Code 终端中，依次输入并运行以下两条命令即可完成安装：
+这是一个专为 Claude Code 打造的快捷初始化工作流插件。以下是建议的工作区框架与相关配置文件。
 
-**1. 添加我的插件市场：**
-/plugin marketplace add SuperEldridge/workspace_fast_Init
+## 建议配置的工作区框架
 
-**2. 安装本插件：**
-/plugin install workspace-fast-init@SuperEldridge-Plugins
+请参考以下目录结构搭建你的本地工作区：
 
-
-
-
-
-建议配置的工作区框架如下：
+```text
 F:\workspace\
 ├── .claude/
 │   ├── hooks/
-│       ├──format_coding.py
-│       ├── ...
+│   │   ├── format_coding.py
+│   │   └── ...
 │   ├── skills/
-│       ├──find-skills
-│           ├── references
-│           ├── SKILL.md
+│   │   └── find-skills/
+│   │       ├── references/
+│   │       └── SKILL.md
 │   ├── rules/
-│   │   ├── env-mcp.md        # 存放 Skill 和 MCP 的下载/配置规则
-│   │   ├── embedded-c.md     # 存放 C/C++、HAL库、硬件防坑守则
-│   │   ├── agent-flow.md     # 存放 SubAgent 唤醒和协作逻辑
-│   │   └── project-init.md   # 存放新建项目时的初始化 SOP
-│   ├── settings.json
+│   │   ├── env-mcp.md          # 存放 Skill 和 MCP 的下载/配置规则
+│   │   ├── embedded-c.md       # 存放 C/C++、HAL库、硬件防坑守则
+│   │   ├── agent-flow.md       # 存放 SubAgent 唤醒和协作逻辑
+│   │   └── project-init.md     # 存放新建项目时的初始化 SOP
+│   └── settings.json           # 见下方详细配置
 ├── projects/
 │   └── <你的具体项目>/
-│       ├── progress.md       # (通过规则自动生成) 项目进度与待办
-│       └── LESSONS.md        # (通过规则自动生成) 项目级专属错题本
+│       ├── progress.md         # (通过规则自动生成) 项目进度与待办
+│       └── LESSONS.md          # (通过规则自动生成) 项目级专属错题本
 ├── Doc/
-        ├──CLAUDE.md.bak      #（存放过时或暂时用不到的CLAUDE.md）
+│   └── CLAUDE.md.bak           # (存放过时或暂时用不到的 CLAUDE.md)
 ├── .mcp.json
-└── CLAUDE.md                 # 主控路由文件
-└── Project_LESSONS.md        # 错题本，自进化用
+├── CLAUDE.md                   # 主控路由文件
+└── Project_LESSONS.md          # 错题本，自进化用
+```
 
-以上为工作区搭建，还可在全局设置agent、CLAUDE.md和GLOBAL_LESSONS.md等等，全局的就个人情况个人分析
-如果遇到有跑不通的，盘可能和我不一样，我是F盘，可以改成自己的盘和路径
+> 配置说明：
+> * 全局配置：以上为核心工作区搭建，你还可以在全局设置 Agent、CLAUDE.md 和 GLOBAL_LESSONS.md 等等，全局配置需结合个人情况具体分析。
+> * 路径适配：如果遇到脚本跑不通的情况，请检查绝对路径。示例中使用的是 F 盘，请根据你的实际情况改成你自己的盘符和对应路径。
 
+---
 
+## settings.json 配置文件
 
-settings.json内容：
+请将以下内容完整复制并保存到 `.claude/settings.json` 文件中：
+
+```json
 {
   "hooks": {
     "PostToolUse": [
@@ -82,3 +81,4 @@ settings.json内容：
     ]
   }
 }
+```
