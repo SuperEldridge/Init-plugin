@@ -1,7 +1,18 @@
 # Claude Code 快捷初始化工作流插件
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+这是一个专为 Claude Code 打造的快捷初始化工作流插件。以下是插件的安装方式以及建议的工作区框架与相关配置文件。
 
-这是一个专为 Claude Code 打造的快捷初始化工作流插件。以下是建议的工作区框架与相关配置文件。
+## 下载与安装
+
+在你的 Claude Code 终端中，依次输入并运行以下两条命令即可完成安装：
+
+**1. 添加我的插件市场：**
+`/plugin marketplace add SuperEldridge/Init-plugin`
+
+**2. 安装本插件：**
+`/plugin install Init-plugin@Init-plugin`
+
+---
 
 ## 建议配置的工作区框架
 
