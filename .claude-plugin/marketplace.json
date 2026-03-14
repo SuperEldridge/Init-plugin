@@ -1,10 +1,13 @@
 {
   "name": "Init-plugin",
-  "description": "SuperEldridge 的快捷初始化工作流插件",
+  "description": "Claude Code 快捷初始化工作流插件合集",
+  "owner": {
+    "name": "SuperEldridge"
+  },
   "plugins": [
     {
-      "name": "Init-plugin", 
-      "source": "."
+      "name": "Init-plugin",
+      "source": "./"
     }
   ]
 }

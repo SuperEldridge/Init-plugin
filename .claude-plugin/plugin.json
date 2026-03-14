@@ -1,6 +1,6 @@
 {
   "name": "Init-plugin",
-  "description": "一套工作区初始化快速配置的plugin，搭配了使用渐进式披露的方法配置CLAUDE.md和skills管理的框架，留出了管理空间，开发者可在User处的.claude再对全局工作区进行约束，实现各个工作区和电脑的解耦",
+  "description": "Claude Code 快捷初始化工作流插件合集",
   "version": "1.0.0",
-  "author": "Eldridge/SuperEldridge"
+  "author": "SuperEldridge"
 }
