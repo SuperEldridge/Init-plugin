@@ -12,6 +12,15 @@
 **2. 安装本插件：**
 `/plugin install Init-plugin@Init-plugin`
 
+> 配置说明：
+> 如果打不开，可能是终端没连上梯子，可以依次在终端运行以下命令：
+```text
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git config --global http.version HTTP/1.1
+git config --global http.sslBackend schannel
+```
+
 ---
 
 ## 建议配置的工作区框架
